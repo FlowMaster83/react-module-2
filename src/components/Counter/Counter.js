@@ -1,6 +1,7 @@
 import React from 'react';
 import Controls from './Controls';
 import Value from './Value';
+
 // - регистрация создания колбэка
 // - в колбеке высов сетстейта:
     // или с объектом, если нужно перезаписать значение не от предыдущего состояния
@@ -42,16 +43,13 @@ handleDecrement = () => {
 render() {
     return (
         <div className="Counter">
-            <Value value={this.state.value}
-            
-            />
+            <Value value={this.state.value}/>
             <Controls 
                 onIncrement={this.handleIncrement}
-                onDecrement={this.handleDecrement}
-            />
+                onDecrement={this.handleDecrement}/>
         </div>
-    );
-};
+        );
+    };
 };
 
 export default Counter;

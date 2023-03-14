@@ -1,5 +1,5 @@
 import React from 'react';
-import Counter from './Counter/Counter';
+// import Counter from './Counter/Counter';
 import Dropdown from './Dropdown/Dropdown';
 
 // const colorPickerOptions = [
@@ -14,7 +14,7 @@ const App = () => (
   <>
   <h1>State of Component</h1>
 
-  <Counter initialValue={10}/>
+  {/* <Counter initialValue={10}/> */}
 
   <Dropdown />
 
