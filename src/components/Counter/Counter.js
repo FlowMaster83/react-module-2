@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Controls from './Controls';
 import Value from './Value';
 
@@ -8,7 +8,7 @@ import Value from './Value';
     // или с функцией, если от предыдущего состояния
 // - начальное значение стейта от пропса
 
-class Counter extends React.Component {
+class Counter extends Component {
     // 1. сначала идет статика:
     
 
