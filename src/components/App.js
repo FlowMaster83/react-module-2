@@ -1,6 +1,6 @@
 import React from 'react';
-// import Counter from './Counter/Counter';
-// import Dropdown from './Dropdown/Dropdown';
+import Counter from './Counter/Counter';
+import Dropdown from './Dropdown/Dropdown';
 import ColorPicker from './ColorPicker/ColorPicker';
 
 const colorPickerOptions = [
@@ -16,9 +16,9 @@ const App = () => (
   <>
   <h1>State of Component</h1>
 
-  {/* <Counter initialValue={10}/> */}
+  <Counter initialValue={10}/>
 
-  {/* <Dropdown /> */}
+  <Dropdown />
 
   <ColorPicker options={colorPickerOptions} />
   </>
