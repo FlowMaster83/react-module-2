@@ -3,7 +3,7 @@ import "./ColorPicker.css";
 
 class ColorPicker extends Component {
   state = {
-    activeOptionIdx: 2,
+    activeOptionIdx: 0,
   };
 
   setActiveIdx = (index) => {
@@ -21,14 +21,17 @@ class ColorPicker extends Component {
   };
 
   render() {
-    const { label } = this.props.options[this.state.activeOptionIdx];
+    // деструктуризация пропов из стейтов в методе рендер
+    const { activeOptionIdx } = this.state;
+    const { options } = this.props;
+    const { label } = options[activeOptionIdx];
 
     return (
       <div className="ColorPicker">
         <h2 className="ColorPicker__title">Color Picker</h2>
         <p>Chosen color: {label}</p>
         <div>
-          {this.props.options.map(({ label, color }, index) => (
+          {options.map(({ label, color }, index) => (
             <button
               key={label}
               className={this.makeOptionClassName(index)}

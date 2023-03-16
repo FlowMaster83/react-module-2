@@ -27,6 +27,8 @@ toggle = () => {
 };
 
 render() {
+
+    const { visible } = this.state;
     return (
         <div className="Dropdown">
             <button 
@@ -36,10 +38,10 @@ render() {
                 >Toggle
 {/* рендерится кнопка */}
 {/* рендер по условию */}
-                {this.state.visible ? 'Hide' : 'Show'}
+                {visible ? 'Hide' : 'Show'}
             </button>
 
-            {this.state.visible && (
+            {visible && (
                 <div className="Dropdown__menu">Dropdown Menu</div>
             )}
         </div>
