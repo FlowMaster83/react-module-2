@@ -40,8 +40,6 @@ class App extends Component {
 
     return (
       <>
-        <h1>State of Component</h1>
-
         {/* <Counter initialValue={10} />
 
         <Dropdown />
